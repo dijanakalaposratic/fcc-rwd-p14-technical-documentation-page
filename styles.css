@@ -73,8 +73,11 @@ section li {
 }
 
 section img {
-    width: 100%;
+    display: block;
+    width: 80%;
     height: auto;
+    margin: auto;
+    text-align: center;
 }
 
 code {
