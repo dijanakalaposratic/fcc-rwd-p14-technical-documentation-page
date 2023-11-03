@@ -65,10 +65,16 @@ section article {
   color: #4d4e53;
   margin: 15px;
   font-size: 0.96em;
+  text-align: justify;
 }
 
 section li {
   margin: 15px 0px 0px 20px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
 }
 
 code {
