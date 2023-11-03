@@ -87,7 +87,30 @@
                         </li>
 
                         <li><h2>Parsing a Stylesheet</h2>
+                            <div>
+                                <h3>Input Encoding</h3>
+                                
+                                <p>In some instances, documents are initially presented as raw sequences of bytes, necessitating their conversion into human-readable 
+                                    text. In the context of Sass, this transformation is executed through the following mechanisms:</p>
+                                
+                                <ol>
+                                    <li>In the presence of a distinct indicator at the beginning of the code, specifying the text's encoding (analogous to a language), 
+                                        Sass adopts that particular encoding.</li>
+                                    <li>If no such indicator is found, but the code includes the specific "@charset" phrase, Sass employs a prescribed algorithm to 
+                                        ascertain the encoding of the text.</li>
+                                    <li>In cases where neither of the aforementioned conditions is met, Sass defaults to assuming that the text is encoded in UTF-8, 
+                                        a widely used character encoding method for text representation in computing.</li>
+                                </ol>
+                            </div>
 
+                            <div>
+                                <h3>Parse Errors</h3>
+                                
+                                <p>When Sass encounters invalid syntax in a stylesheet, parsing will fail and an error will be presented to the user with information 
+                                    about the location of the invalid syntax and the reason it was invalid.</p>
+                                
+                                <p> Note that this is different than CSS, which specifies how to recover from most errors rather than failing immediately.</p>
+                            </div>
                         </li>
 
                         <li>Structure of a Stylesheet
